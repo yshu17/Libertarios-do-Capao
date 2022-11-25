@@ -106,7 +106,7 @@ button
     
          
     position: relative;
-    background: "../images/hero-img.jpg" no-repeat;
+    background: url(../images/hero-img.jpg) no-repeat;
     background-position:center;
     background-size: cover;
 }
@@ -138,7 +138,7 @@ button
 .doar
 {
     color: #262626;
-    background: "../images/hero-img.jpg" no-repeat;
+    background: url(../images/doar-img.jpg) no-repeat;
     background-position:left;
     background-size: auto;
     padding: 190px 0;
