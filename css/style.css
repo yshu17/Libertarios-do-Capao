@@ -106,7 +106,7 @@ button
     
          
     position: relative;
-    background: url('./images/hero-img.jpg') no-repeat;
+    background: url('../images/hero-img.jpg') no-repeat;
     background-position:center;
     background-size: cover;
 }
@@ -766,6 +766,6 @@ button
 
 @font-face {
     font-family: 'Hanson';
-    src: url('./fonts/Hanson-Bold.ttf');
+    src: url('../fonts/Hanson-Bold.ttf');
 
 }
