@@ -1,0 +1,771 @@
+*, 
+*::after, 
+*::before
+{ box-sizing: border-box; }
+
+p,h1,h2,h3,h4,h5
+{ margin: 0; }
+
+li
+{ padding-left: 0; }
+
+ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+body
+{
+    font-family: 'Hanson','Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+button
+{
+    cursor: pointer;
+}
+.container
+{
+    width: 1300px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+/* ============HEADER============ */
+
+.header-container
+{
+    padding: 24px 40px;
+}
+
+.header
+{
+    background-color: #262626;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+.header__inner
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.banner
+{
+    width: 250px;
+}
+.banner__img
+{
+    width: 100%;
+}
+.banner__text
+{
+    border-left: 1px solid #FBF5F1;
+    margin-left:20px;
+    padding: 20px;
+}
+.menu__list
+{
+    display: flex;
+    align-items: center;
+}
+.menu__item:not(:first-child)
+{
+    margin-left: 45px;
+}
+.header__btn
+{
+    width: 200px;
+    padding: 15px 0px;
+    background: #FBF5F1;
+    border-radius: 30px;    
+}
+.burger
+{
+    display: none;
+}
+
+/* =============MAIN================ */
+.hero
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    
+         
+    position: relative;
+    background: url(/images/hero-img.jpg) no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+.hero::after
+{
+    position: absolute;
+    z-index: 1;
+    top:0;left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgba(26, 26, 26, 0.5);     
+}
+.hero__inner
+{
+
+    position:relative;
+    z-index: 2;
+}
+
+.hero__title
+{
+    text-align: center;
+    font-size: 50px; 
+    line-height: 52px;
+}
+
+/* ==============DOAR============= */
+.doar
+{
+    color: #262626;
+    background: url(/images/doar-img.png) no-repeat;
+    background-position:left;
+    background-size: auto;
+    padding: 190px 0;
+}
+.doar__inner
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.doar__title
+{
+    font-family: 'Hanson';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 52px;
+    margin-bottom: 30px;
+    max-width: 750px;
+}
+.doar__text
+{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    max-width: 900px;
+}
+.doar__btn
+{
+    width: 200px;
+    padding: 15px 0px;
+    
+    color: #FAF5F1;
+    background: #262626;
+    border-radius: 30px;
+}
+
+/* ==============INFO============= */
+.info
+{
+    background-color: #262626;
+    padding:120px 0;
+} 
+.about__title
+{
+    margin: 0 0 75px ;
+    text-align: center;
+
+    font-family: 'Hanson';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 52px;
+}
+.about__item
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 115px;
+}
+.about__text
+{
+    max-width: 865px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+}
+.about__text-item
+{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.people__title
+{
+    text-align: center;
+    margin-bottom: 70px;
+
+    font-family: 'Hanson';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 52px;
+}
+.people__list
+{
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+}
+.people__name
+{
+    margin-bottom:10px;
+    text-align: center;
+
+    font-family: 'Hanson';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 26px;
+}
+.people__grade
+{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    text-align: center;
+}
+.people__img
+{
+    margin-bottom: 35px;
+}
+
+/* ==============PROJECTS============= */
+.projects
+{
+    padding: 120px 0;
+    color: #262626;
+}
+.projects__inner
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.projects__item
+{
+    text-align: center;
+    width: 100%;
+}
+.projects__item:nth-child(2)
+{
+    margin: 105px 0;
+}
+.projects-top__title
+{
+    font-family: 'Hanson';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 52px;
+
+    margin-bottom: 80px;
+}
+.projects-top__text, .projects-bot__text
+{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+.projects-bot__text
+{
+    margin-bottom: 50px;
+}
+.projects-bot__btn
+{
+    width: 200px;
+    padding: 15px 0px;
+    color: #FAF5F1;
+    background: #262626;
+    border-radius: 30px;
+}
+.projects__img
+{
+    margin-bottom: 35px;
+}
+.projects__name
+{
+    font-family: 'Hanson';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 26px;
+}
+.swiper-button-next
+{
+    color: #797471;
+    right: -50px; 
+}
+.swiper-button-prev
+{
+    color: #797471;
+    left: -50px;
+}
+.text-mod
+{
+    font-weight: bold;
+}
+
+/* ==============DONATE============= */
+.donate
+{
+    padding: 120px 0;
+    background-color:#262626; 
+}
+.donate__inner
+{
+    text-align: center;
+}
+.donate__title
+{
+    font-family: 'Hanson';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 52px;
+    color: #FBF5F1;
+    margin-bottom: 80px;
+}
+.form
+{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #262626;
+    background-color: #FAF5F1;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: start;
+
+    margin: 0 auto;
+    padding: 40px 135px;
+    max-width: 550px;
+}
+.form__logo
+{
+    margin-bottom: 50px;
+}
+.input__item
+{
+    width: 100%;
+    margin: 10px auto;
+    padding: 15px;
+
+    border: 0.5px solid #000000;
+}
+
+.support__link
+{
+    display: block;
+    text-align: start;
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #003585;
+}
+.form__btn
+{
+    font-family: 'Hanson';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 21px;
+    margin: 40px auto;
+    width: 200px;
+    padding: 15px 0px;
+    color: #FAF5F1;
+    background: #262626;
+    border-radius: 30px;
+
+}
+
+/* ==============CONTACTS============= */
+.contacts
+{
+    padding: 50px 0;
+    background-color: #262626;
+}
+.contacts__inner
+{
+    display: flex;
+    justify-content: space-around;
+}
+.contacts__list
+{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.contacts__title
+{
+    font-size: 23px;
+    line-height: 32px;
+
+    text-align: start;
+    margin-bottom: 20px;
+}
+.contacts-list__item
+{
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+/* ==============FOOTER============= */
+.footer
+{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+
+
+
+    color: #000000;
+    padding: 30px 0;
+    background-color: silver;
+    text-align: center;
+}
+
+/* ==============FONTS============= */
+
+@media(max-width:1599px)
+{
+    .doar
+    {
+        background: none;
+    }
+    .swiper-button-prev
+    {
+        left: 0;
+    }
+    .swiper-button-next 
+    {
+        right: 0;
+    }
+}
+@media(max-width:1399px)
+{ 
+    .container
+    {
+        width: auto;
+        max-width: 1300px;
+    }
+    .header__inner
+    {
+        justify-content: space-around;
+    }
+    .header-menu__item
+    {
+        text-align: center;
+        flex-grow: 1;
+    }
+    .menu__list
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2, 1fr);
+        width: 100%;
+        gap: 30px 0px;
+    }
+
+    .menu__item:not(:first-child) {
+        margin-left: 0px;
+    } 
+
+}
+@media(max-width:1299px)
+{
+    .about__text {
+        max-width: 665px;
+    }
+}
+@media(max-width:1024px)
+{
+    .header-menu__item
+    {
+        text-align: center;
+        flex-grow: 0;
+    }
+    .menu__list
+    {
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 10px 10px;
+    }
+    .doar,.info,.projects,.donate
+    {
+        padding: 100px 0;
+    }
+    .doar__text
+    {
+        max-width: 600px;
+    }
+    .about-logo__img{display: none;}
+    .about__item
+    {
+        display: block;
+        margin:0 0 50px;
+    }
+    .about__text
+    {
+        margin: 0 auto;
+    }
+    .people__list
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        gap: 35px 0;
+    }
+    .contacts__inner
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        gap: 35px 0;
+        text-align: center;
+    }
+    .contacts__title
+    {
+        text-align: center;
+    }
+}
+@media(max-width:799px)
+{
+    .swiper-button-prev,.swiper-button-next 
+    {
+        display: none;
+    }
+    .body
+    {
+        position: relative;
+        overflow-x: hidden;
+    }
+    .menu
+    {
+        color:white;
+        position: absolute;
+        top:0px; right: 0px;
+        z-index: -1;
+        transform: translateX(100%);
+        transition: transform 0.6s ease-in-out;
+    }
+    .menu--visible
+    {
+        transform: none;
+    }
+    .menu::before
+    {
+        position: absolute;
+        content:"";
+        top:0; left: 0;
+        z-index: -1;
+        background: #262626;
+        width: 100%;
+        height: 100vh;
+    }
+    .menu__list
+    {
+        padding: 120px 15px;
+    }
+    .menu__item
+    {
+        
+        margin-bottom: 20px;
+    }
+    .burger
+    {
+        border: none;
+        background-color: #262626;
+        padding: 15px;
+        cursor: pointer;
+        text-align: center;
+        display: block;
+    }
+    .burger__item
+    {
+        width: 40px;
+        display:block;
+        padding: 5px;
+        border-top: 3px solid white;
+    }
+    .header__inner
+    {
+        justify-content: space-between;
+    }
+    .hero__title
+    {
+        font-size: 32px;
+    }
+    .doar__title
+    {
+        max-width: 650px;
+    }
+    .about__text,.projects-top__text,.projects-bot__text
+    {
+        max-width: 530px;
+    }
+    .doar__text
+    {
+        max-width: 400px;
+    }
+}   
+@media(max-width:599px)
+{
+    .header-container
+    {
+        padding: 0 40px;
+    }
+    .header__btn
+    {
+        display: none;
+    }
+    .header__inner
+    {
+        flex-direction: column;
+    }
+    .menu__list
+    {
+        padding: 140px 15px;
+    }
+    .doar,.info,.projects,.donate
+    {
+        padding: 50px 0;
+    }
+    .doar__title,.about__title,.people__title,.projects-top__title,.donate__title
+    {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+    .doar__text,.about__text,.people__name,.projects-top__text,.projects-bot__text,.form
+    {
+        font-size: 18px;
+    }
+    .people__title
+    {
+        margin-bottom: 30px;
+    }
+    .people__grade
+    {
+        font-size: 14px;
+    }
+    .about__item
+    {
+        margin: 0 0 0px;
+    }
+    .people__img 
+    {
+        display: block;
+        width: 100%;
+    }
+    .people__list{
+        gap: 35px 35px;
+
+    }
+    .about__text,.projects-top__text,.projects-bot__text
+    {
+        max-width: 400px;
+    }
+    .form
+    {
+        padding: 35px;
+    }
+    .label
+    {
+        width: 100%;
+    }
+    .footer__link
+    {
+        max-width: 300px;
+    }
+}
+@media(max-width:499px)
+{
+    .doar,.info,.projects,.donate
+    {
+        padding: 25px 0;
+    }
+    .doar__title
+    {
+        max-width: 400px;
+    }
+    .doar__text,.about__text,.projects-top__text,.projects-bot__text
+    {
+        max-width: 300px;
+    }
+    .doar__title,.about__title
+    {
+        font-size: 24px;
+    }
+    .doar__text,.about__text,.projects-top__text,.projects-bot__text,.contacts__link,.footer__link
+    {
+        font-size: 14px;
+    }
+    .people__grade
+    {
+        margin: 0 auto;
+        max-width: 135px;
+    }
+    /* 5555555555555555555555555555555555555555555555555 */
+    .contacts__inner {
+        
+        grid-template-columns: repeat(1,1fr); 
+        gap: 20px 0;
+       
+    }
+}
+
+@font-face {
+    font-family: 'Hanson';
+    src: url('/fonts/Hanson-Bold.ttf');
+
+}
