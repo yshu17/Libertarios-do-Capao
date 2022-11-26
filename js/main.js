@@ -1,7 +1,7 @@
 // Бургер
 
-const burger = document?.querySelector('[data-burger]');
-const menu = document?.querySelector('[data-menu]');
+const burger = document?.querySelector('.burger');
+const menu = document?.querySelector('.menu');
 const menuItems = menu?.querySelectorAll('a');
 burger?.addEventListener('click', ()=>
 {
