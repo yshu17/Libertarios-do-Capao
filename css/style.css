@@ -6,6 +6,7 @@
 p,h1,h2,h3,h4,h5
 { margin: 0; }
 
+
 li
 { padding-left: 0; }
 
@@ -32,6 +33,25 @@ body
 button
 {
     cursor: pointer;
+}
+.button-white
+{
+    padding: 15px 30px;
+    color: #262626;
+    background-color: #FBF5F1;
+    border-radius: 30px;
+    width: 200px;
+    text-align: center;
+}
+.button-black
+{
+    text-align: center;
+    padding: 15px 30px;
+    color: #FAF5F1;
+    background-color: #262626;
+    border-radius: 30px;
+    width: 200px;
+
 }
 .container
 {
@@ -83,13 +103,7 @@ button
 {
     margin-left: 45px;
 }
-.header__btn
-{
-    width: 200px;
-    padding: 15px 0px;
-    background: #FBF5F1;
-    border-radius: 30px;    
-}
+
 .burger
 {
     display: none;
@@ -170,15 +184,6 @@ button
     line-height: 30px;
     margin-bottom: 30px;
     max-width: 900px;
-}
-.doar__btn
-{
-    width: 200px;
-    padding: 15px 0px;
-    
-    color: #FAF5F1;
-    background: #262626;
-    border-radius: 30px;
 }
 
 /* ==============INFO============= */
@@ -296,7 +301,7 @@ button
     font-size: 50px;
     line-height: 52px;
 
-    margin-bottom: 80px;
+    margin: 0 auto 80px;
 }
 .projects-top__text, .projects-bot__text
 {
@@ -311,14 +316,6 @@ button
 .projects-bot__text
 {
     margin-bottom: 50px;
-}
-.projects-bot__btn
-{
-    width: 200px;
-    padding: 15px 0px;
-    color: #FAF5F1;
-    background: #262626;
-    border-radius: 30px;
 }
 .projects__img
 {
@@ -581,6 +578,10 @@ button
 }
 @media(max-width:799px)
 {
+    .container
+    {
+        padding:0 15px ;
+    }
     .swiper-button-prev,.swiper-button-next 
     {
         display: none;

@@ -48,7 +48,7 @@ var swiper = new Swiper(".swiper", {
 //Плавный скрол
 
   $(document).ready(function(){
-    $(".header__inner,.doar__inner,.link-btn").on("click","a", function (event) {
+    $(".header__item,.doar__inner,.projects__inner").on("click","a", function (event) {
       //отменяем стандартную обработку нажатия по ссылке
       event.preventDefault();
   
